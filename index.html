@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Joza</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+
+    
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+            <div class="row s-header__inner">
+
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                        <a class="logo" href="index.html">
+                            <img src="images/logo.svg" alt="Homepage">
+                        </a>
+                    </div>
+
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                <nav class="s-header__nav">    
+                    <ul class="s-header__menu-links">
+                        <li class="current"><a class="smoothscroll" href="#intro">Intro</a></li>
+                        <li><a class="smoothscroll" href="#about">About</a></li>
+                        <li><a class="smoothscroll" href="#works">Works</a></li>
+                        <li><a class="smoothscroll" href="#footer">Contact</a></li>
+                    </ul> <!-- s-header__menu-links -->    
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+        </header> <!-- end s-header -->
+
+
+        <!-- # intro
+        ================================================== -->
+        <section id="intro" class="s-intro target-section">
+
+            <div class="row s-intro__content width-sixteen-col">
+                <div class="column lg-12 s-intro__content-inner grid-block grid-16">
+                    
+                    <div class="s-intro__content-text">
+
+                        <div class="s-intro__content-pretitle text-pretitle">Josip Ljubić</div>
+                        <h1 class="s-intro__content-title">
+                        Designing interfaces,<br>
+                        brands and everything <br>
+                        in between.
+                        </h1>                            
+
+                        <div class="s-intro__content-btns">
+                            <a class="smoothscroll btn" href="#about">More About Me</a>
+                            <a class="smoothscroll btn btn--stroke" href="#footer">Get In Touch</a>
+                        </div> <!-- s-intro__content-btns -->   
+
+                    </div> <!-- s-intro__content-text -->                     
+                    
+                </div> <!-- s-intro__content-inner -->  
+            </div> <!-- s-intro__content -->
+
+            <ul class="s-intro__social social-list">
+                <li>
+                    <a href="https://www.linkedin.com/in/josip-ljubic/?originalSubdomain=ba" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);">
+                            <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6 5.06 0 6 3.33 6 7.66V24h-5v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.07V24h-5V8z"/>
+                        </svg>
+                        <span class="u-screen-reader-text">LinkedIn</span>
+                    </a>                    
+                </li>
+                <li>
+                    <a href="https://www.upwork.com/freelancers/~014807936c135c600e?mp_source=share" target="_blank" rel="noopener noreferrer">
+                        <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 1 9 C 0.448 9 0 9.448 0 10 L 0 24.115234 C 0 30.276234 4.6829844 35.631469 10.833984 35.980469 C 16.730984 36.314469 21.747875 32.176391 22.796875 26.650391 C 23.366875 27.420391 23.94625 28.135969 24.53125 28.792969 L 21.001953 43.771484 C 20.932953 44.069484 21.002406 44.380094 21.191406 44.621094 C 21.382406 44.859094 21.670563 45 21.976562 45 L 27.095703 45 C 27.559703 45 27.959406 44.687328 28.066406 44.236328 C 28.687406 41.615328 29.660969 37.508156 30.542969 33.785156 L 31.453125 34.3125 C 33.618125 35.4335 35.815 36 38 36 C 45.192 36 50.926 29.641 49.875 22.25 C 49.179 17.354 45.414078 13.318344 40.580078 12.277344 C 34.951078 11.064344 29.525359 13.949141 27.193359 18.744141 C 27.193359 18.744141 26.934562 19.318578 26.726562 19.892578 C 25.076563 17.046578 24.107609 14.094078 23.599609 11.955078 C 23.414609 11.175078 23.137469 9.762875 23.105469 9.671875 C 22.966469 9.268875 22.589109 9 22.162109 9 L 17 9 C 16.448 9 16 9.448 16 10 L 16 24.300781 C 16 26.649781 14.287219 28.750516 11.949219 28.978516 C 9.2672187 29.240516 7 27.13 7 24.5 L 7 10 C 7 9.448 6.552 9 6 9 L 1 9 z M 38 19 C 40.757 19 43 21.243 43 24 C 43 26.757 40.757 29 38 29 C 35.775 29 33.713531 27.658281 32.269531 26.488281 C 32.796531 24.263281 33.15025 22.773047 33.15625 22.748047 C 33.72425 20.541047 35.717 19 38 19 z"/></svg>   
+                    <span class="u-screen-reader-text">Upwork</span>
+                    </a>                    
+                </li>
+            </ul> <!-- end s-intro__social -->
+
+            <div class="s-intro__content-media">                               
+                <img src="images/intro-bg.jpg" srcset="images/intro-bg.jpg 1x, images/intro-bg.jpg 2x" alt="">
+            </div> <!-- s-intro__content-media -->                
+
+            <div class="s-intro__btn-download">
+                <a
+                class="btn btn--stroke"
+                href="josip ljubic - resume.pdf"
+                download
+            >Get My CV</a>
+            </div> <!-- end s-intro__btn-download -->
+            
+            <div class="s-intro__scroll-down">
+                <a href="#about" class="smoothscroll">
+                    <div class="scroll-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                    </div>
+                    <span class="scroll-text u-screen-reader-text">Scroll Down</span>
+                </a>
+            </div> <!-- s-intro__scroll-down -->
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- # about
+        ================================================== -->
+        <section id="about" class="s-about target-section">
+
+            <div class="row s-about__content">
+                <div class="column xl-12">    
+                    
+                    <div class="section-header" data-num="">
+                        <h2 class="text-display-title">About Me.</h2>
+                    </div> <!-- end section-header -->
+
+                    <p class="attention-getter">
+                        Product designer creating graphics for print and digital media, crafting interfaces that are simple, clear, and easy to use. I’m experienced in working with clients across different industries and value the trust and clear communication that come from these collaborations.
+                    </p>
+
+                    <p class="attention-getter">
+                        My work process focuses on simple solutions, adapts to project needs and stays clear from start to finish. Decisions are made from the client’s perspective, with attention to how the final result will be used and understood in real-world situations.
+                      </p>
+
+                      <p class="attention-getter">
+                        Skilled in Adobe Creative Suite, Figma and always exploring new ways to improve and keep my work fresh.
+                                          </p>  
+
+ <!-- grid-list-items -->
+
+                </div> <!--end column -->
+            </div> <!--end s-about__content -->
+            
+        </section> <!-- end s-about -->   
+
+
+
+        <!-- # works
+        ================================================== -->
+        <section id="works" class="s-works target-section">
+
+            <div class="row">
+                <div class="column xl-12">
+                    <div class="section-header" data-num="">
+                        <h2 class="text-display-title">Selected Works.</h2>
+                    </div> <!-- end section-header -->
+                </div>
+            </div>
+
+            <div class="row folio-entries">
+
+                <div class="column entry">
+                    <a href="fotke_stranica/inproject_fotke/dropdata dashboard 2.jpg" class="entry__link glightbox" data-glightbox="title: DropData; description: .entry__desc-01">
+                        <div class="entry__thumb">
+                            <img src="fotke_stranica/thumbnail_fotke/dropdata dashboard 4.jpg" srcset="fotke_stranica/thumbnail_fotke/dropdata dashboard 4.jpg 2.jpg 1x, fotke_stranica/thumbnail_fotke/dropdata dashboard 4.jpg 2.jpg@2x.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">DropData</h4>
+                            <div class="entry__cat">Product Design · SaaS Dashboard</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-01">
+                        <p>
+                            A data-driven SaaS dashboard designed to monitor billboard performance using camera input and traffic data. The system provides real-time insights such as vehicle counts, movement patterns, and ad exposure, helping advertisers better understand reach and optimize campaign performance.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="fotke_stranica/inproject_fotke/street food.jpg" class="entry__link glightbox" data-glightbox="title: Street Food Fest; description: .entry__desc-02">
+                        <div class="entry__thumb">
+                            <img src="fotke_stranica/thumbnail_fotke/street.jpg" srcset="fotke_stranica/thumbnail_fotke/street.jpg 1.png 1x, images/folio/woodcraft@2x.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Street Food Fest</h4>
+                            <div class="entry__cat">Visual Identity · Digital & Print</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-02">
+                        <p>
+                            Complete visual identity for a local street food festival, covering the logo, core visuals, social media, and print materials. The result is a bold, flexible visual system that works naturally across both digital and on-site use.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="fotke_stranica/inproject_fotke/goteam app 2.jpg" class="entry__link glightbox" data-glightbox="title: GoTeam; description: .entry__desc-03">
+                        <div class="entry__thumb">
+                            <img src="fotke_stranica/thumbnail_fotke/goteam app 4.jpg" srcset="fotke_stranica/thumbnail_fotke/goteam app 4.jpg 1x, images/folio/caffeine_and_tulips@2x.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">GoTeam</h4>
+                            <div class="entry__cat">Product Design · Mobile Application</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-03">
+                        <p>
+                            A mobile app designed to help groups plan trips together by collecting preferences, aligning availability, and guiding the group toward a shared decision. The focus was on clear flows, simple input, and smooth decision-making across the entire booking process.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="fotke_stranica/inproject_fotke/globalsoft redesign 3.jpg" class="entry__link glightbox" data-glightbox="title: globalsoft; description: .entry__desc-04">
+                        <div class="entry__thumb">
+                            <img src="fotke_stranica/thumbnail_fotke/globalsoft redesign 6.jpg" srcset="fotke_stranica/thumbnail_fotke/globalsoft redesign 6.jpg 1x, images/folio/grayscale@2x.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">globalsoft</h4>
+                            <div class="entry__cat">Website Redesign · UX/UI & Digital Assets</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-04">
+                        <p>
+                            Website redesign focused on simplifying the structure and rebuilding the landing page around selected work. Projects are presented through a rotating layout that highlights key case studies and guides users deeper into the site, while unnecessary content was removed to keep the experience clear and focused.
+                        </p>
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="fotke_stranica/inproject_fotke/capljinksa.jpg" class="entry__link glightbox" data-glightbox="title: Čapljinska Petica; description: .entry__desc-05">
+                        <div class="entry__thumb">
+                            <img src="fotke_stranica/thumbnail_fotke/capljinska.jpg" srcset="fotke_stranica/thumbnail_fotke/capljinska.jpg 1x, images/folio/lamp@2x.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Čapljinska Petica</h4>
+                            <div class="entry__cat">Visual Identity · Event Branding</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-05">
+
+                    </div>
+                </div> <!-- entry -->
+
+                <div class="column entry">
+                    <a href="fotke_stranica/inproject_fotke/frutiii.jpg" class="entry__link glightbox" data-glightbox="title: Frutinator; description: .entry__desc-06">
+                        <div class="entry__thumb">
+                            <img src="fotke_stranica/thumbnail_fotke/frutinator.jpg" srcset="fotke_stranica/thumbnail_fotke/frutinator.jpg fotke/frutiii.jpg redesign 3.png 1x, images/folio/tropical@2x.jpg 2x" alt="">
+                        </div>
+                        <div class="entry__info">
+                            <h4 class="entry__title">Frutinator</h4>
+                            <div class="entry__cat">Casino Game Interface · Visual Design</div>
+                        </div>
+                    </a>
+
+                    <div class="glightbox-desc entry__desc-06">
+                        <p>
+                            Visual interface design for a classic slot game, focused on clear gameplay structure, recognizable symbols, and strong visual feedback during key moments like wins. 
+                            The experience was designed to feel familiar and easy to follow, with emphasis on symbol clarity, contrast, and win-state presentation to keep gameplay readable and engaging.                        </p>
+
+                            <div class="entry__long-image">
+                                <img src="duge_fotke/frutinator.jpg" alt="DropData long preview">
+                              </div>
+                    </div>
+
+                </div> <!-- entry --> 
+
+            </div> <!-- folio entries -->
+
+
+<!-- end s-testimonials -->
+
+        </section> <!-- end s-works --> 
+
+
+        <!-- # numbers
+        ================================================== -->
+ <!-- end s-numbers -->
+
+
+        <!-- # footer 
+        ================================================== -->
+        <footer id="footer" class="s-footer target-section">
+
+            <div class="row">
+                <div class="column lg-12">
+                    <div class="section-header light-on-dark" data-num="">
+                        <h2 class="text-display-title">Get In Touch.</h2>
+                    </div> <!-- end section-header -->
+                </div>
+            </div>
+
+            <div class="row s-footer__content">
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__about">                    
+                    <p class="attention-getter">
+                        If you have a project in mind and need design support, feel free to get in touch. Open to new projects and collaborations. 
+
+                    </p>               
+                </div> <!-- end section-footer__about -->
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__site-links">
+                    <div class="row">
+                        <div class="column xl-4 lg-5 md-6 tab-12">
+                            <h5>Follow Me</h5>
+                            <ul class="link-list">
+                                <li><a href="https://www.linkedin.com/in/josip-ljubic/?originalSubdomain=ba">LinkedIn</a></li>
+                                <li><a href="https://www.upwork.com/freelancers/~014807936c135c600e?mp_source=share">Upwork</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="column xl-6 md-6 tab-12">
+                            <h5>Contact Me</h5>
+                            <ul class="link-list">
+                                <li><a href="mailto:j.ljubic96@gmail.com">j.ljubic96@gmail.com</a></li>
+                                <li><a href="tel:+1975432345">+387 63 129 240</a></li>
+                            </ul> 
+                        </div>
+                    </div>                    
+                </div> <!-- end section-footer__site-links -->
+
+            </div> <!-- end section-footer__content -->
+
+
+            <div class="row s-footer__buttons">
+               
+                <div class="column xl-6 tab-12">
+                    <a href="mailto:j.ljubic96@gmail.com" class="btn btn--primary btn--large u-fullwidth">Message Me</a>
+                </div>
+          
+                <div class="column xl-6 tab-12">                    
+                    <a                 
+                    href="josip ljubic - resume.pdf"
+                    download 
+                    class="btn btn--stroke btn--large u-fullwidth">Get My CV</a>
+                </div>
+            
+            </div> <!-- end section-footer__buttons -->              
+            
+            <div class="row s-footer__bottom">
+                
+                <div class="column xl-6 lg-12">
+                    <ul class="s-footer__social social-list">
+                        <li>
+                            <a href="https://www.linkedin.com/in/josip-ljubic/?originalSubdomain=ba" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);">
+                                    <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6 5.06 0 6 3.33 6 7.66V24h-5v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.07V24h-5V8z"/>
+                                </svg>
+                                <span class="u-screen-reader-text">LinkedIn</span>
+                            </a>   
+                        </li>
+                        <li>
+                            <a href="https://www.upwork.com/freelancers/~014807936c135c600e?mp_source=share" target="_blank" rel="noopener noreferrer">
+                                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 1 9 C 0.448 9 0 9.448 0 10 L 0 24.115234 C 0 30.276234 4.6829844 35.631469 10.833984 35.980469 C 16.730984 36.314469 21.747875 32.176391 22.796875 26.650391 C 23.366875 27.420391 23.94625 28.135969 24.53125 28.792969 L 21.001953 43.771484 C 20.932953 44.069484 21.002406 44.380094 21.191406 44.621094 C 21.382406 44.859094 21.670563 45 21.976562 45 L 27.095703 45 C 27.559703 45 27.959406 44.687328 28.066406 44.236328 C 28.687406 41.615328 29.660969 37.508156 30.542969 33.785156 L 31.453125 34.3125 C 33.618125 35.4335 35.815 36 38 36 C 45.192 36 50.926 29.641 49.875 22.25 C 49.179 17.354 45.414078 13.318344 40.580078 12.277344 C 34.951078 11.064344 29.525359 13.949141 27.193359 18.744141 C 27.193359 18.744141 26.934562 19.318578 26.726562 19.892578 C 25.076563 17.046578 24.107609 14.094078 23.599609 11.955078 C 23.414609 11.175078 23.137469 9.762875 23.105469 9.671875 C 22.966469 9.268875 22.589109 9 22.162109 9 L 17 9 C 16.448 9 16 9.448 16 10 L 16 24.300781 C 16 26.649781 14.287219 28.750516 11.949219 28.978516 C 9.2672187 29.240516 7 27.13 7 24.5 L 7 10 C 7 9.448 6.552 9 6 9 L 1 9 z M 38 19 C 40.757 19 43 21.243 43 24 C 43 26.757 40.757 29 38 29 C 35.775 29 33.713531 27.658281 32.269531 26.488281 C 32.796531 24.263281 33.15025 22.773047 33.15625 22.748047 C 33.72425 20.541047 35.717 19 38 19 z"/></svg>                          
+                                <span class="u-screen-reader-text">Upwork</span>
+                            </a>   
+                        </li>
+                    </ul> 
+                </div> <!-- end section-footer__social -->
+
+                <div class="column xl-6 lg-12">
+                    <p class="ss-copyright">
+
+                    </p>
+                </div>
+
+            </div> <!-- end section-footer__bottom -->          
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">                 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path></svg>
+                </a>                                
+                <span>Back To Top</span>   
+            </div> <!-- end ss-go-top -->
+            
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end page-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
