@@ -221,6 +221,7 @@
     --vspace-0_625: calc(0.625 * var(--space));
     --vspace-0_75 : calc(0.75 * var(--space));
     --vspace-0_875: calc(0.875 * var(--space));
+    --vspace-0_925:calc(0.925*var(--space));
     --vspace-1    : calc(var(--space));
     --vspace-1_25 : calc(1.25 * var(--space));
     --vspace-1_5  : calc(1.5 * var(--space));
@@ -1572,7 +1573,7 @@ hr.fancy::before {
 .attention-getter {
     font-family: var(--font-inter);
     font-size  : var(--text-md);
-    line-height: var(--vspace-1);
+    line-height: var(--vspace-0_925);
 }
 
 @media screen and (max-width: 800px) {
@@ -2786,7 +2787,7 @@ td:last-child {
 .section-header {
     display      : flex;
     align-items  : flex-start;
-    margin-bottom: var(--vspace-2);
+    margin-bottom: var(--vspace-1);
     position     : relative;
 }
 
@@ -2851,8 +2852,8 @@ td:last-child {
 }
 
 .social-list svg {
-    height: var(--vspace-1) !important;
-    width : var(--vspace-1) !important;
+    height: var(--vspace-0_875) !important;
+    width : var(--vspace-0_875) !important;
 }
 
 .social-list svg path,
@@ -3537,7 +3538,7 @@ td:last-child {
 }
 
 .s-intro__content-title {
-    font-size  : 48px !important;
+    font-size  : 54px !important;
     font-weight: 600 !important;
     line-height: 1.0 !important;      
     letter-spacing: -0.025em;
@@ -4017,13 +4018,36 @@ td:last-child {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ===================================================================
  * # ABOUT
  *
  *
  * ------------------------------------------------------------------- */
 .s-about {
-    padding-top: var(--vspace-2_5);
+    padding-top: var(--vspace-1);
     color      : var(--color-3);
 }
 
@@ -4093,8 +4117,8 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-works {
-    padding-top   : var(--vspace-2) !important;
-    padding-bottom: var(--vspace-2) !important;
+    padding-bottom: var(--vspace-1) !important;
+    padding-top: var(--vspace-1) !important;
 }
 
 .folio-entries {
@@ -4113,6 +4137,103 @@ td:last-child {
     overflow: hidden;
     position: relative;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 720px) {
+    .s-footer__buttons {
+      max-width: 418px !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .s-footer__buttons .column {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  
+    .s-footer__buttons .btn {
+      display: block;
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  
+
+
+  .s-footer__social {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.s-footer__social li {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.s-footer__social svg {
+    display: block !important;
+}
+
+/* LinkedIn */
+.s-footer__social li:first-child svg {
+    width: 25px !important;
+    height: 25px !important;
+    transform: translateY(1px) !important;
+}
+
+/* Upwork */
+.s-footer__social li:last-child svg {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.s-intro__social li:last-child svg {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4156,16 +4277,33 @@ td:last-child {
 }
 
 
-.folio-entries .entry__cat,
 .folio-entries .entry__title {
     font-family: var(--font-inter);
+    font-size: 26px !important;
     font-weight: 700;
 }
 
 .folio-entries .entry__cat {
-    font-size  : calc(var(--text-size) * 0.8);
+    font-family: var(--font-inter);
+    font-size: 18px !important;
+    font-weight: 400;
     line-height: 1.75;
-    color      : var(--color-white);
+    color: var(--color-white);
+    white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+    .folio-entries .entry__cat {
+        white-space: normal !important;
+        font-size: 16px !important;
+
+    }
+
+    .folio-entries .entry__title {
+        font-family: var(--font-inter);
+        font-size: 22px !important;
+        font-weight: 700;
+    }
 }
 
 .folio-entries .entry__title {
@@ -4195,7 +4333,6 @@ td:last-child {
 }
 
  
-
 
 
 
@@ -4383,8 +4520,8 @@ td:last-child {
     --bottom-padding: var(--vspace-2_5);
     background-color: var(--color-3);
     margin-top      : auto;
-    padding-top     : var(--vspace-1_75);
-    padding-bottom  : var(--vspace-1_75);
+    padding-top     : var(--vspace-1);
+    padding-bottom  : var(--vspace-1);
     color           : var(--color-gray-15);
 }
 
