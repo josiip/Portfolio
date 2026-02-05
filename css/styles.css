@@ -227,6 +227,7 @@
     --vspace-1_5  : calc(1.5 * var(--space));
     --vspace-1_75 : calc(1.75 * var(--space));
     --vspace-2    : calc(2 * var(--space));
+    --vspace-2_25    : calc(2.25 * var(--space));
     --vspace-2_5  : calc(2.5 * var(--space));
     --vspace-3    : calc(3 * var(--space));
     --vspace-3_5  : calc(3.5 * var(--space));
@@ -2770,6 +2771,7 @@ td:last-child {
     color         : var(--color-1);
     transform     : translate(0.2em, 0);
     margin-top    : 0;
+    margin-bottom: var(--vspace-0_375) !important;
 }
 
 .text-display-title {
@@ -2778,7 +2780,7 @@ td:last-child {
     line-height   : 1.0717;
     letter-spacing: -0.015em;
     margin-top    : 0;
-    margin-bottom : var(--vspace-1) !important;
+    margin-bottom : var(--vspace-0_75) !important;
 }
 
 /* ------------------------------------------------------------------- 
@@ -2792,7 +2794,6 @@ td:last-child {
 }
 
 .section-header .text-display-title {
-    padding-top  : 0.5em;
     margin-bottom: 0;
     position     : relative;
 }
@@ -3035,10 +3036,11 @@ td:last-child {
     .text-pretitle {
         font-size  : var(--text-size);
         line-height: var(--vspace-0_75);
+        margin-bottom: var(--vspace-0_125) !important;
     }
 
     .section-header {
-        margin-bottom: var(--vspace-1_5) !important;
+        margin-bottom: var(--vspace-0_25) !important;
     }
 
     .section-header .text-display-title {
@@ -4047,7 +4049,7 @@ td:last-child {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-    padding-top: var(--vspace-1);
+    padding-top: var(--vspace-2);
     color      : var(--color-3);
 }
 
@@ -4100,13 +4102,22 @@ td:last-child {
     color      : var(--color-text-light) !important;
 }
 
+.s-works {
+    padding-bottom: var(--vspace-1) !important;
+    padding-top: var(--vspace-1_5) !important;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * about
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 800px) {
     .s-about {
-        padding-top: var(--vspace-2);
+        padding-top: var(--vspace-2_25);
+    }
+
+    .s-works {
+        padding-top: var(--vspace-1_25) !important;
     }
 }
 
@@ -4116,10 +4127,7 @@ td:last-child {
  *
  *
  * ------------------------------------------------------------------- */
-.s-works {
-    padding-bottom: var(--vspace-1) !important;
-    padding-top: var(--vspace-1) !important;
-}
+
 
 .folio-entries {
     --width-grid-max: 1400px;
@@ -4294,7 +4302,7 @@ td:last-child {
 
 @media (max-width: 900px) {
     .folio-entries .entry__cat {
-        white-space: normal !important;
+        white-space: nowrap !important;
         font-size: 16px !important;
 
     }
@@ -4306,13 +4314,27 @@ td:last-child {
     }
 }
 
+@media (max-width: 600px) {
+    .folio-entries .entry__cat {
+        white-space: nowrap !important;
+        font-size: 14px !important;
+
+    }
+
+    .folio-entries .entry__title {
+        font-family: var(--font-inter);
+        font-size: 20px !important;
+        font-weight: 700;
+    }
+}
+
 .folio-entries .entry__title {
     font-weight  : 700 !important;
     font-size    : var(--text-size);
     line-height  : 1.2;
     margin-top   : 0;
     font-family: var(--font-inter) !important;
-    margin-bottom: var(--vspace-0_25);
+    margin-bottom: 0 !important;
     color        : white;
 }
 
@@ -4520,7 +4542,7 @@ td:last-child {
     --bottom-padding: var(--vspace-2_5);
     background-color: var(--color-3);
     margin-top      : auto;
-    padding-top     : var(--vspace-1);
+    padding-top     : var(--vspace-2_25);
     padding-bottom  : var(--vspace-1);
     color           : var(--color-gray-15);
 }
